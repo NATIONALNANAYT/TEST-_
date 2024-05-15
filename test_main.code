@@ -1,0 +1,44 @@
+#!/usr/bin/python3 
+
+import time
+
+print("Loading")
+time.sleep(10)
+print("HELLO!")
+time.sleep(12)
+
+class AsentLoader:
+    def __init__(self, data):
+        self.data = data
+    
+    def load_data(self):
+        # Add code to load data here
+        pass
+    
+    def preprocess_data(self):
+        # Add code to preprocess data here
+        pass
+    
+    def transform_data(self):
+        # Add code to transform data here
+        pass
+
+
+import requests
+
+url = 'https://github.com/NATIONALNANAYT'
+response = requests.get(url)
+
+if response.status_code == 200:
+    print('Successfully accessed the URL')
+else:
+    print('Failed to access the URL')
+import os
+
+folder_path = "ASENTS"
+for file in os.listdir(folder_path):
+    if os.path.isfile(os.path.join(folder_path, file)):
+        with open(os.path.join(folder_path, file), 'r') as f:
+            data = f.read()
+            # Process the data as needed
+            print(data)
