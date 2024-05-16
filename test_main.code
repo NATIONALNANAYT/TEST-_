@@ -42,3 +42,7 @@ for file in os.listdir(folder_path):
             data = f.read()
             # Process the data as needed
             print(data)
+
+
+print("App down please wait..")
+print("App not done beta1(")
