@@ -19,7 +19,7 @@ def countdown(t):
         time.sleep(1)
         t -= 1
 
-options = ["play", "settings", "credits", "<button><a href="https://discord.com/invite/2BM8aahkbb">Discord</a></button>, "exit app"]
+options = ["play", "settings", "credits", "discord", "exit app"]
 
 print("After the 5-second countdown, choose what you would like to do:")
 countdown(5)
